@@ -1,0 +1,198 @@
+ body {
+      margin: 0;
+      padding:0;
+      font-family: Arial, sans-serif;
+      background-color:  	#f1dec9;
+      /* background-color: black;
+      color:white; */
+    }
+  .navbar {
+      position: fixed;
+      top:0px;
+       left: 0;
+      padding: 12px 24px;
+      width:100%;
+      background-color:black;
+      color: white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      animation: slideDown 1s ease;
+    
+    }
+   .navbar .options a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #f8e9ff;
+        font-weight: 500;
+      }
+    .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 0%;
+      }
+       .nav-doodles {
+        display: flex;
+        gap: 8px;
+        font-size: 1.4rem;
+      }
+    a:hover{
+     border: 1px solid white;
+    }
+/* hero */
+   #Hero{
+      background-image: url(grill.jpg); 
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: larger;
+    }
+    /* Menu */
+#menu {
+  padding: 20px;
+  text-align: center;
+
+}
+
+#menu h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#menu table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+    
+    background-color: #f9f9f9;
+
+}
+
+#menu th, #menu td {
+  border: 1px solid #ddd;
+  padding: 12px;
+    background-color: #f9f9f9;
+}
+
+#menu th {
+  background-color: #222;
+  color: white;
+}
+/* Gallery */
+#Gallery{
+text-align:center;
+}
+.image{
+  display: flex;
+  flex-wrap: wrap;
+  justifY-content:center;
+  gap: 20px;
+}
+.image img{
+   width: 200px;
+        border: 4px solid burlywood;
+        border-radius: 8px;
+        filter:blur(1px);
+        transition: transform 0.4s ease, filter 0.4s ease;
+
+}
+.image img:hover{
+  transform: rotate(4deg) scale(1.1);
+        filter: brightness(110%);
+}
+/* Order */
+/* Order + Review Section */
+#order {
+  padding: 40px 20px;
+  text-align: center;
+  /* background: #f9f9f9; */
+}
+
+#order h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.order-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.order-form label {
+  font-weight: bold;
+}
+
+.order-form input,
+.order-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.order-form textarea {
+  resize: none;
+}
+
+.order-form button {
+  padding: 12px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:cubic-bezier(0.23, 1, 0.320, 1) ease;
+}
+
+.order-form button:hover {
+  background: #ff5722; /* grill theme orange */
+}
+footer {
+  background: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-nav,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.footer-nav li,
+.footer-contact li {
+  margin: 5px 0;
+}
+
+.footer-nav a {
+  color: #ff9800; /* orange theme */
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
